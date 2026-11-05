@@ -6,7 +6,6 @@
 
 int main(int argc, char** argv)
 {
-	// Вместо SetConsoleCP используем локаль системы
 	std::setlocale(LC_ALL, "Russian");
 
 	std::string str1{};
@@ -15,7 +14,7 @@ int main(int argc, char** argv)
 
 	std::fstream fout("out.txt", std::ios::out);
 
-	std::cout << "Введите размер массива: ";
+	std::cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г°Г Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ : ";
 	std::cin >> count;
 	std::cout << std::endl;
 
@@ -31,7 +30,7 @@ int main(int argc, char** argv)
 
 	for (auto i = str2.rbegin(); i != str2.rend(); ++i)
 	{
-		fout << *i << " " << std::flush; //str1[i] << " " << std::flush;
+		fout << *i << " " << std::flush;
 	}
 
 	fout.close();
